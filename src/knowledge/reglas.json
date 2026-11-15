@@ -1,0 +1,23 @@
+{
+  "descripcion": "Reglas de negocio del registro como proveedor que aplican las herramientas. Cambiar este archivo no requiere tocar el servidor.",
+  "identificador_tributario_por_pais": {
+    "CO": "NIT",
+    "EC": "RUC",
+    "PE": "RUC",
+    "PA": "RUC",
+    "HN": "RTN"
+  },
+  "pais_del_maestro": "CO",
+  "clave_identificador_tributario": "nit",
+  "etiquetas_ambiguas": [
+    "Identificación tributaria",
+    "Número de identificación fiscal"
+  ],
+  "prefijo_claves_bancarias": "banco.",
+  "umbral_confianza": 0.8,
+  "confianza": {
+    "glosario_exacto": 1,
+    "glosario_normalizado": 0.9,
+    "clave_maestro_inferida": 0.6
+  }
+}

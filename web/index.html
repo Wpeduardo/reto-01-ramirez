@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Registro como Proveedor</title>
+  <link rel="stylesheet" href="/styles.css" />
+  <script src="/app.js" defer></script>
+</head>
+<body>
+  <header class="barra">
+    <div>
+      <h1>Registro como Proveedor</h1>
+      <p class="sub">Agente de Periferia IT Group · prepara formularios y paquetes para firma</p>
+    </div>
+    <div class="acciones">
+      <span id="estado-modelo" class="chip">conectando…</span>
+      <button id="nueva" type="button" class="secundario">Nueva sesión</button>
+    </div>
+  </header>
+
+  <main id="conversacion" aria-live="polite">
+    <section id="bienvenida" class="bienvenida">
+      <h2>¿Qué solicitud procesamos?</h2>
+      <p>El agente lee la solicitud, llena el formulario solo con datos del repositorio maestro y arma el paquete para firma. Nunca envía nada sin tu confirmación.</p>
+      <div class="sugerencias">
+        <button type="button" class="sugerencia" data-texto='Procesa el caso "ec-corp-andina". Dime qué campos quedaron llenos, cuáles faltan, si el paquete está listo para firma y qué soportes debo actualizar. No envíes nada todavía.'>Procesar ec-corp-andina (PDF)</button>
+        <button type="button" class="sugerencia" data-texto='Procesa el caso "co-industrias-delta". No envíes nada todavía.'>Procesar co-industrias-delta (Excel)</button>
+        <button type="button" class="sugerencia" data-texto='Procesa el caso "hn-agroexport-sula". No envíes nada todavía.'>Procesar hn-agroexport-sula (Excel)</button>
+        <button type="button" class="sugerencia" data-texto='Procesa el caso "pa-logistica-istmo". No envíes nada todavía.'>Procesar pa-logistica-istmo (portal)</button>
+      </div>
+    </section>
+  </main>
+
+  <section id="confirmacion" class="confirmacion" hidden>
+    <p><strong>El agente espera tu confirmación.</strong> No se ejecutará ninguna acción externa hasta que confirmes.</p>
+    <div class="botones">
+      <button id="confirmar" type="button">Sí, envía</button>
+      <button id="cancelar" type="button" class="secundario">No, todavía no</button>
+    </div>
+  </section>
+
+  <form id="formulario" class="entrada">
+    <label for="mensaje" class="oculto">Mensaje</label>
+    <textarea id="mensaje" rows="2" placeholder="Escribe un mensaje… (Enter para enviar, Shift+Enter para salto de línea)" maxlength="4000"></textarea>
+    <button id="enviar" type="submit">Enviar</button>
+  </form>
+</body>
+</html>
