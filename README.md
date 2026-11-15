@@ -8,15 +8,12 @@ legal. Nunca envía nada sin confirmación humana.
 **Link de prueba:** https://reto-01-ramirez.onrender.com
 **Clave de acceso:** se proporciona en el correo de entrega del reto.
 
-> El servicio usa el plan gratuito de Render: si lleva más de 15 minutos sin tráfico, la primera
-> carga puede tardar alrededor de un minuto.
 
 ## Requisitos
 
 - [Bun](https://bun.sh) 1.1 o superior (o Docker).
 - Una clave de un proveedor de modelos: Google Gemini (usado en el despliegue, a través de su API
-  compatible con OpenAI), Anthropic u OpenAI, o un modelo local con API compatible con OpenAI
-  (Ollama, LM Studio).
+  compatible con OpenAI)
 
 ## Levantar en local (un comando)
 
